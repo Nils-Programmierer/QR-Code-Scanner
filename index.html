@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Code Scanner</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon512_maskable.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+
+<body>
+    <div class="headline">QR-Code Scanner</div>
+
+    <div class="Middle">
+        <div class="white">
+            <div id="scannenDiv">
+                <div class="Middle">
+                    <span class="material-symbols-outlined" style="cursor: pointer; font-size: 50px; margin-right: 25px"
+                        onclick="Camera();">
+                        photo_camera
+                    </span>
+
+                    <span class="material-symbols-outlined" style="cursor: pointer; font-size: 50px;"
+                        onclick="Gallery();">
+                        image
+                    </span>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <div class="Middle">
+                    <div id="Pic" class="Pic"></div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <div class="Middle">
+                    <div class="successful" id="link"></div>
+                </div>
+
+            </div>
+
+
+
+            <div id="createDiv" style="display: none;">
+                <form onsubmit="CreateCode(event)">
+                    <div class="Middle">
+                        <input id="url" type="url" placeholder="URL" class="url" required>
+                    </div>
+                    <div class="Middle">
+                        <button type="submit">Erstellen</button>
+                    </div>
+                </form>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="Middle">
+                    <div id="code">
+
+                    </div>
+                </div>
+
+
+                <br>
+                <br>
+                <div class="Middle">
+                    <span class="material-symbols-outlined" style="cursor: pointer; display: none; font-size: 50px;"
+                        id="download" onclick="DownloadCode()">
+                        download
+                    </span>
+                </div>
+
+                <br>
+                <br>
+                <div class="Middle">
+                    <div class="successful" id="successful" style="display: none;">
+                        Erfolgreich heruntergeladen!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="choose">
+        <div class="scannen" id="scannen" onclick="ChangeToScannen();" style="background-color: yellow;">Scannen</div>
+        <div class="create" id="create" onclick="ChangeToCreate();">Erstellen</div>
+    </div>
+
+
+</body>
+
+</html>
