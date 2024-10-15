@@ -21,6 +21,6 @@
     "lang": "de",
     "name": "QR-Code Scanner",
     "short_name": "QR-Code Scanner",
-    "start_url": "/index.html",
+    "start_url": "/QR-Code-Scanner/index.html",
     "description": "Unser QR-Code Scanner und Generator ist eine benutzerfreundliche Webanwendung, die es dir ermöglicht, QR-Codes schnell und einfach zu erstellen und zu scannen. Mit der integrierten Kamerafunktion kannst du QR-Codes in Echtzeit erkennen und den darin enthaltenen Link oder Text abrufen."
 }
