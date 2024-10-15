@@ -117,6 +117,7 @@ function Camera() {
     LinkDiv.innerHTML = "";
     const video = document.createElement('video');
     video.style.maxWidth = '100%';
+    video.style.height = "270px";
     video.autoplay = true;
 
     navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } } })
