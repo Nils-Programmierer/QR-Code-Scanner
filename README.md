@@ -5,4 +5,4 @@ Dieses Projekt verwendet HTML, CSS und JavaScript sowie die Bibliotheken [jsQR](
 ## Benutzung
 - Öffne die `index.html`-Datei im Browser.
 - Klicke auf Scannen um einen QR-Code zu scannen. Danach kann man auf das Kamera Symbol drücken um einen QR-Code in Echtzeit zu scannen oder man drückt auf das Foto Symbol um ein Foto aus der Gallerie zu scannen.
-- Klicke auf Erstellen und gebe eine URL zu einer Website ein. Drücke anschließend auf erstellen und ein QR-Code wird generiert, der auch heruntergeladen werden kann als png-Datei.
+- Drücke auf Erstellen und gebe eine URL zu einer Website ein. Klicke anschließend auf erstellen und ein QR-Code wird generiert, der auch heruntergeladen werden kann als png-Datei.
