@@ -72,10 +72,19 @@ function Gallery() {
         const file = event.target.files[0];
         if (!file) return;
 
+        if (!file.type.startsWith('image/')) {
+            LinkDiv.innerHTML = `
+                    <span class="red">Die Datei ist kein Bild!</span>
+                `;
+            return;
+        }
+
         const img = document.createElement('img');
         img.src = URL.createObjectURL(file);
-        img.style.maxWidth = 'auto';
-        img.style.height = '270px';
+        img.style.maxWidth = '300px';
+        img.style.maxheight = '240px';
+        img.style.width = 'auto';
+        img.style.height = '250px';
 
         picContainer.innerHTML = '';
         picContainer.appendChild(img);
@@ -116,8 +125,8 @@ function Gallery() {
 function Camera() {
     LinkDiv.innerHTML = "";
     const video = document.createElement('video');
-    video.style.maxWidth = '100%';
-    video.style.height = "270px";
+    video.style.maxWidth = '300px';
+    video.style.height = "280px";
     video.autoplay = true;
 
     navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } } })
