@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <link rel="manifest" href="manifest.json">
-    <link rel="icon" href="icon512_maskable.png" type="image/x-icon">
+    <link rel="icon" href="img/icon512_maskable.png" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 
@@ -24,15 +22,8 @@
         <div class="white">
             <div id="scannenDiv">
                 <div class="Middle">
-                    <span class="material-symbols-outlined" style="cursor: pointer; font-size: 50px; margin-right: 25px"
-                        onclick="Camera();">
-                        photo_camera
-                    </span>
-
-                    <span class="material-symbols-outlined" style="cursor: pointer; font-size: 50px;"
-                        onclick="Gallery();">
-                        image
-                    </span>
+                    <img class="icon" style="margin-right: 25px" onclick="Camera();" src="img/photo_camera.png">
+                    <img class="icon" onclick="Gallery();" src="img/image.png">
                 </div>
 
                 <br>
@@ -77,10 +68,8 @@
                 <br>
                 <br>
                 <div class="Middle">
-                    <span class="material-symbols-outlined" style="cursor: pointer; display: none; font-size: 50px;"
-                        id="download" onclick="DownloadCode()">
-                        download
-                    </span>
+                    <img class="icon" style="display: none;"
+                        id="download" onclick="DownloadCode()" src="img/download.png">
                 </div>
 
                 <br>
