@@ -82,14 +82,19 @@ button {
 
 button:hover {
     background-color: rgb(248, 248, 7);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
+.icon {
+    cursor: pointer;
+    width: 60px;
+    height: auto;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .successful {
@@ -101,3 +106,4 @@ button:hover {
 .red {
     color: red;
 }
+
